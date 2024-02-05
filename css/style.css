@@ -1,0 +1,292 @@
+@font-face {
+    font-family: alkatra-regular;
+    src: url(../fonts/Alkatra-Regular.ttf);
+}
+
+@font-face {
+    font-family: alkatra-bold;
+    src: url(../fonts/Alkatra-bold.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: alkatra-regular;
+    transition: all .3s ease;
+}
+
+input,
+button,
+textarea {
+    border: none;
+    outline: none;
+}
+
+.h3 {
+    font-size: 1.5em;
+}
+
+.h4 {
+    font-size: .8em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-inline-flex {
+    display: inline-flex;
+    align-items: center;
+}
+
+.bg-1 {
+    background: #ff4443;
+}
+
+.color-1 {
+    color: #ff4443;
+}
+
+@keyframes bounce {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    33% {
+        transform: rotate(1deg);
+    }
+
+    66% {
+        transform: rotate(-1deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes scale_2x {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#end-countdown-div {
+    font-size: 5rem;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: fit-content;
+    margin: auto;
+    right: 0;
+    left: 0;
+    height: fit-content;
+    padding: 50px;
+    border-radius: 2rem;
+    color: red;
+    box-shadow: inset 0px 0px 10px red;
+    animation: bounce 3s linear infinite;
+}
+
+#end-countdown-div button {
+    font-size: 2rem;
+    font-family: alkatra-bold;
+    background: #000000;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#end-countdown-div button:hover {
+    transform: scale(1.1);
+}
+
+.p-1 {
+    padding: 0.5rem;
+}
+
+.p-2 {
+    padding: 1rem;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.d-block {
+    display: block;
+}
+
+.line-height-2 {
+    line-height: 2;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.box-shadow-1 {
+    box-shadow: 0 0 3px #ff4443;
+}
+
+.box-shadow-2 {
+    box-shadow: 0 0 2px 0 #a3a3a3;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+#app {
+    box-shadow: 0px 0px 3px #9e9e9e;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#countdown-div {
+    font-size: 3rem;
+}
+
+#app .title {
+    margin-top: 0.6em;
+    font-size: 4rem;
+    color: #ffffff;
+    background: #ff4443;
+}
+
+.motivation-text {
+    position: fixed;
+    font-family: alkatra-bold;
+    background: #f9f8f8cc;
+    color: red;
+    top: 0;
+    left: 0;
+    right: 0;
+    float: right;
+    padding: 0.5em;
+}
+
+.product__hero {}
+
+.product__hero_img {
+    width: 50%;
+}
+
+.product__hero_img img {
+    width: 100%;
+}
+
+.product__hero_description {
+    font-size: 1.6em;
+    width: 50%;
+}
+
+.product-imgs-div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.product-imgs-div .img {
+    width: calc(100%/2 - 6%);
+    display: inline-flex;
+    box-shadow: 0 0 3px;
+    padding: 1em;
+    align-items: center;
+    margin: 3%;
+    flex-wrap: nowrap;
+}
+
+.product-imgs-div .img img {
+    width: 100%;
+    display: block;
+}
+
+#product_description_text_div {
+    text-align: right;
+    font-size: 1.4rem;
+}
+
+#product_features_div {
+    background: white;
+}
+
+#product_features_div .features_ul {
+    list-style: none
+}
+
+#product_features_div .features_ul li {
+    padding: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+    box-shadow: 0 0 3px 0px #ff4443;
+    background: #ffffff;
+    color: #000000;
+    text-align: right;
+    text-shadow: 0 0 3px #8d8c8c;
+    margin: 0.5em auto;
+    width: 90%;
+}
+
+
+.product_feature_title {
+    font-size: 1.6rem;
+}
+
+.product_feature_description {
+    font-size: 1.5rem;
+}
+
+#form {}
+
+#form label {
+    cursor: pointer;
+}
+
+#form label span {
+    font-size: 1.4rem;
+    color: rgb(0 0 0);
+    background: #f5efef;
+    font-weight: bold;
+}
+
+
+#form label input {
+    font-size: 1.2rem;
+}
+
+#form input[type="submit"] {
+    font-size: 1.6rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
